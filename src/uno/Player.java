@@ -64,7 +64,14 @@ public abstract class Player { // parent class to user_player and AI_player
 	 * and remove the card from hand
 	 * @return the card to play
 	 */
-	public abstract Card play(Card previousCard);
+	
+	public abstract Card play(Card previousCard, Card user_play);
+	for (Card user_play: playable()){
+		if(user_play.type == previouscard.type || user_play.value == previouscard.value){
+			Card.removeCard(user_play);
+			
+		}
+	}
 
 	
 }
