@@ -76,6 +76,7 @@ public class UnoGame {
 //	}
 	
 	// test AI_Players
+	//prompt the user for the number of AI_Players as well?
 	public void initiate() {
 		deck.shuffle();
 		for(int i=0; i<playerNumber; i++) {
