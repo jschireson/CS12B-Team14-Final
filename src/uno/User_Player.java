@@ -22,11 +22,12 @@ public class User_Player extends Player {
 		int user_cardValue = in.nextInt();
 		Card user_Card = new Card(user_cardType, user_cardValue);
 		
-		while (tester) { //while statement will go on till users choice matches on in his hand that is possible to play 
+		while (tester = true) { //while statement will go on till users choice matches on in his hand that is possible to play 
 			for(Card i : userPlayer_cards) {
 				if(i.type == user_Card.type && i.value == user_Card.value) {
 					this.removeCard(i);
 					return user_Card;
+					tester = false;
 				}
 				/*
 				if(previousCard.value == -1) {
