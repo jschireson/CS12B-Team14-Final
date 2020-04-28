@@ -21,7 +21,7 @@ public class User_Player extends Player {
 		for(Card i : userPlayer_cards) { 
 			System.out.print(" "+i+" ");
 		}
-		System.out.println("Which card do you wish to play? (Enter in the 'Type' then enter the cards 'Value' )");
+		System.out.println("Which card do you wish to play? (Enter in the 'Type' then enter the cards 'Value' )"); //Should specify to the user that capitalization/exact input matters
 		String user_cardType = in.next();
 		int user_cardValue = in.nextInt();
 		Card user_Card = new Card(user_cardType, user_cardValue);
