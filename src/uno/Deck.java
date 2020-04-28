@@ -22,12 +22,19 @@ public class Deck {
 	 * used in addCards to loop over card types
 	 */
 	private final String[] colors = { "Blue", "Yellow", "Green", "Red" };
+	private final int[] numbers = { 0,1,2,3,4,5,6,7,8,9,10,11,12 };
+
 
 	/*
 	 * Constructor, adds cards to the deck
 	 */
 	public Deck() {
 		this.addCards();
+	}
+	
+	public displayLastPlayed(){
+		last = discard.get(discard.size()-1);
+		return last;
 	}
 
 	/*
